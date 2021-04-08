@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    tools:context=".fragments.LegalContactUsFragment">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/basic_card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="175dp"
+        android:backgroundTint="@color/white"
+        android:minWidth="280dp"
+        android:outlineAmbientShadowColor="@color/cardview_shadow_end_color"
+        android:padding="5dp"
+        card_view:cardCornerRadius="12dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="367dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            tools:context=".fragments.LegalContactUsFragment">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:contentDescription="@string/contact_us_label"
+                android:src="@drawable/care_logo" />
+
+            <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginHorizontal="@dimen/view_margin">
+
+        <TextView
+            style="@style/ListLabelTextStyle"
+            android:textSize="18sp"
+            android:text="@string/call_us_on"
+            android:layout_width="100dp"/>
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1"/>-->
+            <TextView
+                android:id="@+id/call_us_result"
+                style="@style/ListLabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/ic_phone_green"
+                android:text=""
+                android:textSize="20sp" />
+            <!--</LinearLayout>-->
+
+            <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginHorizontal="@dimen/view_margin">
+
+        <TextView
+            style="@style/ListLabelTextStyle"
+            android:text="@string/email_label"
+            android:textSize="18sp"
+            android:layout_width="100dp"/>
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1"/>-->
+            <TextView
+                android:id="@+id/email_result"
+                style="@style/ListLabelTextStyle"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textSize="18sp" />
+            <!--</LinearLayout>-->
+
+            <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginHorizontal="@dimen/view_margin">
+
+        <TextView
+            android:id="@+id/ben_booking_id"
+            style="@style/ListLabelTextStyle"
+            android:text="@string/address_label"
+            android:layout_width="100dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1"/>-->
+            <TextView
+                android:id="@+id/address_result"
+                style="@style/ListLabelTextStyle"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:lines="4"
+                android:text=""
+                android:textSize="18sp" />
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

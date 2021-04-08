@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.RegisterBeneficiaryActivity">
+    <ScrollView
+        android:id="@+id/reg_ben_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/check_zipcode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/view_margin"
+        android:layout_marginEnd="@dimen/view_margin"
+        android:layout_marginTop="@dimen/view_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/background_dark"
+        android:fontFamily="@font/source_sans_pro"
+            android:textSize="14sp"
+            android:text="@string/info_check_zipcode"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_ben_zip_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/input_margin"
+                android:layout_marginEnd="@dimen/input_margin"
+                android:layout_weight="0.7">
+
+                <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                    android:id="@+id/regben_check_zipcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_zipcode"
+                    android:fontFamily="@font/source_sans_pro_extralight"
+                    android:maxLength="6"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/check_zipcode_button"
+                style="@style/TransparentNegativeButton"
+                android:text="@string/check"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--visibility-->
+            <TextView
+                android:id="@+id/info_servicablility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/source_sans_pro"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_green"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:id="@+id/ben_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_margin"
+                    android:layout_marginEnd="@dimen/view_margin"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:text="@string/ask_service_receiver"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+                    <Spinner
+                        android:id="@+id/select_regben_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:prompt="@string/select_beneficiary" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regben_relation_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginStart="@dimen/input_margin"
+                    android:layout_marginEnd="@dimen/input_margin">
+
+                    <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                        android:id="@+id/regben_relationtype_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro_extralight"
+                        android:hint="@string/regben_type_label"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/signup_uname_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_margin"
+                    android:layout_marginEnd="@dimen/input_margin">
+
+                    <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                        android:id="@+id/regben_fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro_extralight"
+                        android:hint="@string/fullname_label"
+                        android:inputType="textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/bengender_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/input_margin"
+                    android:layout_marginEnd="@dimen/input_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/view_margin"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:text="@string/gender" />
+
+                    <RadioButton
+                        android:id="@+id/gender_radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:textColor="@color/theme_purple"
+                        android:layout_marginEnd="@dimen/view_margin"
+                        android:text="@string/male_label" />
+
+                    <RadioButton
+                        android:id="@+id/gender_radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/theme_purple"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:layout_marginStart="@dimen/view_margin"
+                        android:text="@string/female_label" />
+                    <RadioButton
+                        android:id="@+id/gender_radio_others"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/theme_purple"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:layout_marginStart="@dimen/view_margin"
+                        android:text="@string/others" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/regben_ccode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/view_margin"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                    </Spinner>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/regben_mobile_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/input_margin">
+
+                        <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                            android:id="@+id/regben_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/source_sans_pro_extralight"
+                            android:hint="@string/mobile_label"
+                            android:inputType="numberDecimal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regben_email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_margin"
+                    android:layout_marginEnd="@dimen/input_margin">
+
+                    <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                        android:id="@+id/regben_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro_extralight"
+                        android:hint="@string/email_label"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regben_dob_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_margin"
+                    android:layout_marginEnd="@dimen/input_margin">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/regben_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:focusable="false"
+                        android:fontFamily="@font/source_sans_pro_extralight"
+                        android:hint="@string/dob_label"
+                        android:drawableEnd="@drawable/ic_calendar"
+                        android:inputType="date" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regben_address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_margin"
+                    android:layout_marginEnd="@dimen/input_margin">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/address_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro_extralight"
+                        android:hint="@string/address_label"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:text="@string/select_city"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/regben_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/select_city" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regben_state_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_margin"
+                    android:layout_marginEnd="@dimen/input_margin">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/regben_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro_extralight"
+                        android:hint="@string/state_label"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regben_zipcode_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_margin"
+                    android:layout_marginEnd="@dimen/input_margin">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/regben_zipcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro_extralight"
+                        android:hint="@string/zipcode_label"
+                        android:inputType="text"
+                        android:lines="4" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regben_requirement_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_margin"
+                    android:layout_marginEnd="@dimen/input_margin">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/regben_requirement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/additional_info"
+                        android:fontFamily="@font/source_sans_pro_extralight"
+                        android:inputType="text"
+                        android:lines="4" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ask_select_language"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:id="@+id/regben_language"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/choose_plan_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:text="@string/choose_plan_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp"
+                    android:visibility="gone"/>
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center">
+
+                  <androidx.cardview.widget.CardView
+                      xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                      android:id="@+id/basic_card_view"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      card_view:cardCornerRadius="8dp"
+                      android:padding="5dp"
+                      android:layout_margin="5dp"
+                      card_view:cardBackgroundColor="@color/theme_blue">
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                          <TextView
+                              android:id="@+id/info_text"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="@string/basic_label"
+                              android:gravity="center"
+                              android:textStyle="bold"
+                              android:layout_marginTop="@dimen/view_margin"
+                              android:textColor="@color/white"
+                              android:textSize="22sp"/>
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:textSize="30sp"
+                              android:gravity="center"
+                              android:textColor="@color/white"
+                              android:text="$20/hr"/>
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:textColor="@color/white"
+                              android:text="No membership fee"/>
+                          <Button
+                              android:id="@+id/basic_card_select_btn"
+                              style="@style/GradientNegativeSmallButton"
+                              android:layout_gravity="center"
+                              android:text="@string/select_label"/>
+                      </LinearLayout>
+                  </androidx.cardview.widget.CardView>
+                  <CheckBox
+                      android:id="@+id/basic_select_check"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+              </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <androidx.cardview.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/premium_card_view"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="8dp"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        card_view:cardBackgroundColor="@color/theme_green">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/premium_info_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/premium_label"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginTop="@dimen/view_margin"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"/>
+                            <TextView
+                                android:id="@+id/premium_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="30sp"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:text="$25/hr"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="@dimen/view_margin"
+                                android:textColor="@color/white"
+                                android:text="$15 per month as membership fee"/>
+                            <Button
+                                android:id="@+id/premium_card_button_select"
+                                style="@style/GradientNegativeSmallButton"
+                                android:layout_gravity="center"
+                                android:text="@string/select_label"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <CheckBox
+                        android:id="@+id/premium_select_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+        <Button
+            style="@style/GradientSmallButton"
+            android:layout_width="wrap_content"
+            android:id="@+id/submit_register_ben"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/submit"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/add_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>

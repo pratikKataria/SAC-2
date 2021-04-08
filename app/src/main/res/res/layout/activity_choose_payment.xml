@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ChoosePaymentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/theme_gradient_vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/view_margin"
+            android:fontFamily="@font/source_sans_pro_extralight"
+            android:text="@string/proceed_payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_title_text_size"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="@dimen/view_margin"
+        android:layout_marginEnd="@dimen/view_margin">
+
+        <TextView
+            android:id="@+id/proceed_pay_booking_id"
+            style="@style/ListLabelTextStyle"
+            android:text="@string/booking_id"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1"
+            android:fontFamily="@font/source_sans_pro_extralight" />
+        <TextView
+            android:id="@+id/proceed_pay_booking_id_result"
+            style="@style/ListValueTextStyle"
+            android:text=""
+            android:layout_weight="0.4"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_margin"
+        android:layout_marginEnd="@dimen/view_margin">
+
+        <TextView
+            android:id="@+id/proceed_pay_total_fare"
+            style="@style/ListLabelTextStyle"
+            android:text="@string/total_fare"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1"/>
+        <TextView
+            android:id="@+id/proceed_pay_total_fare_result"
+            style="@style/ListValueTextStyle"
+            android:text=""
+            android:layout_weight="0.4"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:gravity="center_horizontal"
+        android:text="@string/select_payment_label" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin"
+        android:layout_marginStart="@dimen/view_margin"
+        android:layout_marginEnd="@dimen/view_margin">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/discover"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/source_sans_pro_extralight" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/input_margin"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/input_margin"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/ben_gender_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/input_margin"
+            android:contentDescription="@string/beneficiary_label"
+            android:src="@drawable/user_avatar" />
+
+        <TextView
+            android:id="@+id/ben_name"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:padding="2dp"
+            android:text="@string/beneficiary_label"
+            android:textColor="@color/list_title_color"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/fav_booking"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:contentDescription="@string/pending_label"
+            android:gravity="center"
+            android:src="@drawable/favimg"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/view_margin"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:text="@string/age_label"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/ben_age"
+            style="@style/ListValueTextStyle"
+            android:layout_weight="0.9"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/view_margin"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:text="@string/about"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <!-- <TextView
+                    style="@style/ListSeparatorStyle"
+                    android:layout_marginEnd="3dp"/>-->
+        <TextView
+            android:id="@+id/ben_about"
+            style="@style/ListValueTextStyle"
+            android:layout_width="match_parent"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!--</LinearLayout>-->
+
+    <View
+        style="@style/SmallDivider"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/view_margin"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/ben_booking_id"
+            style="@style/ListLabelTextStyle"
+            android:layout_weight="0.5"
+            android:text="@string/booking_id" />
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/ben_booking_id_result"
+            style="@style/ListValueTextStyle"
+            android:layout_weight="0.4"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/view_margin"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/ben_service_date"
+            style="@style/ListLabelTextStyle"
+            android:layout_weight="0.5"
+            android:text="@string/service_start_date" />
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/ben_service_date_result"
+            style="@style/ListValueTextStyle"
+            android:layout_weight="0.4"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/view_margin"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/ben_service_end_date"
+            style="@style/ListLabelTextStyle"
+            android:layout_weight="0.5"
+            android:text="@string/service_end_date" />
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/ben_service_end_date_result"
+            style="@style/ListValueTextStyle"
+            android:layout_weight="0.4"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/view_margin"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/ben_service_duration"
+            style="@style/ListLabelTextStyle"
+            android:layout_weight="0.5"
+            android:text="@string/expected_service_duration" />
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/ben_service_duration_result"
+            style="@style/ListValueTextStyle"
+            android:layout_weight="0.4"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/view_margin"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/ben_booking_requirement"
+                style="@style/ListLabelTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/requirements_label" />
+
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:gravity="center"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ben_booking_requirement_result"
+            style="@style/ListValueTextStyle"
+            android:layout_width="match_parent"
+            android:maxLines="4"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/view_margin"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/ben_booking_location"
+                style="@style/ListLabelTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/location_label" />
+
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:gravity="center"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ben_booking_location_result"
+            style="@style/ListValueTextStyle"
+            android:layout_width="match_parent"
+            android:layout_weight="0.7"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/view_margin"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/ben_booking_zipcode"
+            style="@style/ListLabelTextStyle"
+            android:layout_weight="0.5"
+            android:text="@string/zipcode_label" />
+
+        <TextView
+            style="@style/ListSeparatorStyle"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/ben_booking_zipcode_result"
+            style="@style/ListValueTextStyle"
+            android:layout_weight="0.4"
+            android:text="" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel_request"
+        style="@style/GradientNegativeSmallButton"
+        android:layout_gravity="center"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="@string/cancel" />
+</LinearLayout>

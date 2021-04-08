@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragments.AddCardFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/add_new_card_label"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_blue"
+        android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/add_new_card"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/view_margin"
+            android:layout_marginBottom="5dp"
+        android:fontFamily="@font/source_sans_pro"
+            android:gravity="center"
+            android:text="@string/billing_address" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                android:id="@+id/add_card_billing_address"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:focusable="false"
+                android:drawableEnd="@drawable/icon_pickup"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                android:hint="@string/location_label"
+                android:inputType="textPostalAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_margin"
+                android:layout_marginEnd="@dimen/view_margin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="@color/theme_blue"
+                    android:id="@+id/add_card_apartment_details"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                    android:hint="@string/billing_add_apartment_label"
+                    android:inputType="textPostalAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                android:id="@+id/add_card_billing_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                android:hint="@string/country_label"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                android:id="@+id/add_card_billing_state"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                android:hint="@string/state_label"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                android:id="@+id/add_card_billing_city"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                android:hint="@string/city_label"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                android:id="@+id/add_card_billing_zipcode"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                android:hint="@string/zipcode_label"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/view_margin"
+            android:layout_marginBottom="5dp"
+        android:fontFamily="@font/source_sans_pro"
+            android:gravity="center"
+            android:text="@string/card_details" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="@dimen/view_margin"
+            android:background="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:backgroundTint="@color/theme_blue"
+                android:id="@+id/add_new_card_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                android:hint="@string/cardholder_name"
+                android:inputType="text"
+                android:paddingTop="@dimen/text_padding"
+                android:paddingBottom="@dimen/text_padding"
+                android:paddingEnd="@dimen/text_padding"
+                android:textColorHint="@color/theme_blue" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="@dimen/view_margin"
+            android:background="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                android:id="@+id/add_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                android:hint="@string/card_num_label"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/text_padding"
+                android:textColorHint="@color/theme_blue" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/view_margin"
+            android:paddingEnd="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+        android:fontFamily="@font/source_sans_pro"
+                android:text="@string/card_expiry_label" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginStart="@dimen/view_margin"
+                android:layout_marginEnd="@dimen/view_margin">
+
+                <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                    android:id="@+id/add_new_cardexp_month"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                    android:hint="@string/month_label"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:padding="@dimen/text_padding"
+                    android:textColorHint="@color/theme_blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+        android:fontFamily="@font/source_sans_pro"
+                android:text="@string/slash"
+                android:textSize="22sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@color/white"
+                android:inputType="numberDecimal"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginStart="@dimen/view_margin"
+                android:layout_marginEnd="@dimen/view_margin">
+
+                <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                    android:id="@+id/add_new_cardexp_year"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                    android:hint="@string/year_label"
+                    android:maxLength="4"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/text_padding"
+                    android:textColorHint="@color/theme_blue" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/view_margin"
+            android:paddingEnd="@dimen/view_margin"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+        android:fontFamily="@font/source_sans_pro"
+                android:text="@string/card_cvv" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginTop="@dimen/view_margin"
+            android:background="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                android:id="@+id/add_new_card_cvv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_extralight"
+                android:hint="@string/cvv_label"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="@dimen/text_padding"
+                android:textColorHint="@color/theme_blue" />
+        </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/submit_new_card"
+            style="@style/GradientSmallButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"/>
+    </LinearLayout>
+</ScrollView>
+    <FrameLayout
+        android:id="@+id/addcard_location_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:background="@color/theme_background">
+
+        <TextView
+            android:id="@+id/view_schd_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toStartOf="@+id/close_timings"
+        android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center"
+            android:text="@string/available_schd_title"
+            android:textColor="@color/colorAccent" />
+        <ImageButton
+            android:id="@+id/close_timings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cross"
+            android:contentDescription="@string/bookings"
+            android:background="@color/transparent"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/view_schd_data_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true"
+        android:animationCache="false"
+        android:dividerHeight="1dp"
+        android:visibility="visible"
+        android:background="@color/white">
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/buddy_timing_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reason_cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_margin"
+        android:layout_marginHorizontal="@dimen/input_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reason_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="250"
+            android:lines="5"
+            android:fontFamily="@font/source_sans_pro_extralight"
+            android:hint="@string/cancel_reason"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/reason_cancel_info"
+        android:layout_below="@+id/reason_cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+        android:layout_marginHorizontal="@dimen/input_margin"
+        android:text=""/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@id/reason_cancel_info"
+        android:layout_marginHorizontal="@dimen/view_margin">
+        <Button
+            android:id="@+id/cancel_op_req"
+            style="@style/MultiButtonRed"
+            android:text="@string/cancel"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/proceed_cancel_req"
+            style="@style/MultiButtonBlue"
+            android:text="@string/ok"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!--<stroke android:color="#22000000" android:width="2dp"/>-->
+    <corners android:radius="30dp" />
+    <solid android:color="#CC0001"/>
+    <size
+        android:width="10dp"
+        android:height="10dp"/>
+</shape>
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/dot_badge_layout"
+        android:width="8dp"
+        android:height="8dp"
+        />
+
+</layer-list >-->

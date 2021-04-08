@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/theme_blue"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/close_pending_payment"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cancel_label"
+            android:src="@drawable/ic_cross_white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_ur_buddy"
+            android:elevation="8dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/payment_listview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true"
+        android:animationCache="false"
+        android:dividerHeight="1dp"
+        android:visibility="visible"
+        android:layout_marginTop="8dp">
+    </ListView>
+</LinearLayout>

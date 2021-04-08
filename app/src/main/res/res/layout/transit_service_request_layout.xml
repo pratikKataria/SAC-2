@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/ben_gender_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/user_avatar"
+            android:contentDescription="@string/beneficiary_label"
+            android:layout_weight="0.2"/>
+        <TextView
+            android:id="@+id/buddy_transit_ben_name_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Headline"
+        android:fontFamily="@font/source_sans_pro_semibold"
+            android:padding="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/ben_name_label"
+            android:textColor="@color/list_title_color"
+            android:layout_weight="0.7"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/buddy_transit_location_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/input_margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:paddingStart="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginStart="@dimen/view_margin">
+
+            <TextView
+                android:id="@+id/ben_booking_id"
+                style="@style/ListLabelTextStyle"
+                android:text="@string/booking_id"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/ben_booking_id_result"
+                style="@style/ListValueTextStyle"
+                android:text=""
+                android:layout_gravity="bottom"
+                android:layout_weight="0.9"/>
+            <TextView
+                android:id="@+id/more_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/route_map_label"
+                android:drawableStart="@drawable/googlemap_img"
+        android:fontFamily="@font/source_sans_pro"
+                android:textColor="@color/colorAccent"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_gravity="end"
+                android:layout_weight="0.1"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ben_exp_service_date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginHorizontal="@dimen/view_margin">
+
+            <TextView
+                style="@style/ListLabelTextStyle"
+                android:text="@string/expected_start_date"
+                android:layout_width="150dp"/>
+
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/ben_exp_service_date_result"
+                style="@style/ListValueTextStyle"
+                android:text=""
+                android:layout_weight="0.9"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ben_service_date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginHorizontal="@dimen/view_margin">
+
+            <TextView
+                style="@style/ListLabelTextStyle"
+                android:text="@string/service_start_date"
+                android:layout_width="150dp"/>
+
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/ben_service_date_result"
+                style="@style/ListValueTextStyle"
+                android:text=""
+                android:layout_weight="0.9"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginHorizontal="@dimen/view_margin">
+
+            <TextView
+                android:id="@+id/ben_service_duration"
+                style="@style/ListLabelTextStyle"
+                android:text="@string/expected_service_duration"
+                android:layout_width="150dp"/>
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/ben_service_duration_result"
+                style="@style/ListValueTextStyle"
+                android:text=""
+                android:layout_weight="0.9"/>
+        </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:weightSum="1"
+             android:layout_marginHorizontal="@dimen/view_margin">
+
+             <TextView
+                 android:id="@+id/ben_service_end_date"
+                 style="@style/ListLabelTextStyle"
+                 android:text="@string/service_end_date"
+                 android:layout_width="150dp"/>
+
+             <TextView
+                 style="@style/ListSeparatorStyle"
+                 android:layout_weight="0.1"/>
+             <TextView
+                 android:id="@+id/ben_service_end_date_result"
+                 style="@style/ListValueTextStyle"
+                 android:text=""
+                 android:layout_weight="0.9"/>
+         </LinearLayout>
+        <TextView
+            android:id="@+id/track_service_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="3dp"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-medium"/>
+        <Button
+            android:id="@+id/buddy_transit_buddy_phone_result"
+            style="@style/GradientButton"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/ic_phone"
+            android:text="Call Buddy"/>
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginEnd="@dimen/view_margin">
+
+            <TextView
+                android:id="@+id/buddy_transit_buddy_phone"
+                style="@style/ListLabelTextStyle"
+                android:text="@string/mobile_label"
+                android:layout_weight="0.4"/>
+
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/buddy_transit_buddy_phone_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:drawableEnd="@drawable/ic_phone_green"
+                android:text=""
+                android:layout_weight="0.5"/>
+        </LinearLayout>-->
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginHorizontal="@dimen/view_margin">
+
+            <TextView
+                android:id="@+id/buddy_transit_buddy_name"
+                style="@style/ListLabelTextStyle"
+                android:text="@string/buddy_name_label"
+                android:layout_weight="0.4"/>
+
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/buddy_transit_buddy_name_result"
+                style="@style/ListValueTextStyle"
+                android:text=""
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginHorizontal="@dimen/view_margin">
+
+            <TextView
+                android:id="@+id/buddy_transit_ben_name"
+                style="@style/ListLabelTextStyle"
+                android:text="@string/ben_name_label"
+                android:layout_weight="0.4"/>
+
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/buddy_transit_ben_name_result1"
+                style="@style/ListValueTextStyle"
+                android:text=""
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginHorizontal="@dimen/view_margin">
+
+            <TextView
+                android:id="@+id/buddy_transit_ben_phone"
+                style="@style/ListLabelTextStyle"
+                android:text="@string/mobile_label"
+                android:layout_weight="0.4"/>
+
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/buddy_transit_ben_phone_result"
+                style="@style/ListValueTextStyle"
+                android:drawableEnd="@drawable/ic_phone"
+                android:text=""
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginHorizontal="@dimen/view_margin">
+
+            <TextView
+                android:id="@+id/buddy_transit_buddy_location"
+                style="@style/ListLabelTextStyle"
+                android:text="@string/location_label"
+                android:layout_weight="0.4"/>
+
+            <TextView
+                style="@style/ListSeparatorStyle"
+                android:layout_weight="0.1"/>
+            <TextView
+                style="@style/ListValueTextStyle"
+                android:text=""
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginHorizontal="@dimen/view_margin">
+
+            <TextView
+                android:id="@+id/buddy_transit_buddy_location_result"
+                style="@style/ListValueTextStyle"
+                android:text=""
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"/>
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

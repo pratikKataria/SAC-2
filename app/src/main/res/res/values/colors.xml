@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#001D4F</color>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#fff</color>
+    <color name="offwhite">#A1F3E9E9</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_transparent">#E6FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#B2000000</color>
+    <color name="theme_blue">#001D4F</color>
+    <color name="theme_blue_rgb">#003577</color>
+    <color name="theme_purple">#8C37E1</color>
+    <color name="theme_purple_light">#A969E8</color>
+    <color name="theme_background">#dfdfdf</color>
+    <color name="cardview_color">#03000000</color>
+
+    <color name="theme_blue_trans">@color/theme_blue</color>
+    <color name="text_green">#5fad73</color>
+    <color name="theme_green">@color/theme_purple_light</color>
+    <color name="theme_green_trans">#d93adc92</color>
+    <color name="list_title_color">@color/theme_purple</color>
+  <!--
+Theme Light
+Purple
+#A969E8
+Theme Purple
+#8C37E1
+Theme blue
+#001D4F
+    <color name="cadetblue">#5f9ea0</color>
+    <color name="cadetblue_light">#4B5F9EA0</color>
+    <color name="theme_gradient_blue">#00ACEA</color>
+    <color name="theme_gradient_green">#31F2CB</color>
+    <color name="light_green">#51B655</color>
+    <color name="home_green">#34B9A0</color>
+    <color name="home_blue">#07A3F1</color>
+    <color name="light_grey">#16000000</color>
+    <color name="theme_color">#3949ab</color>
+    <color name="card_view_bg_color">#c3fff4</color>-->
+</resources>

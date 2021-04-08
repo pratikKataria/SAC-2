@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "478965336702",
+    "project_id": "sac-2-f1c38",
+    "storage_bucket": "sac-2-f1c38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478965336702:android:66645c7b9182defa59a62f",
+        "android_client_info": {
+          "package_name": "com.caringaide.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478965336702-hp9bbh08k7c51sll6lnu693k16d7rv1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqSRqwkwKmnPQJzAPk0dU_2x0WixJ_rjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478965336702-hp9bbh08k7c51sll6lnu693k16d7rv1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragments.TrackBuddyFragment">
+
+    <ListView
+        android:id="@+id/track_buddy_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true"
+        android:animationCache="false"
+        android:dividerHeight="1dp"
+        android:visibility="visible">
+    </ListView>
+    <TextView
+        android:id="@+id/no_data_tv_transit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No data in transit"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:textColor="@color/common_google_signin_btn_text_dark_disabled"
+        />
+
+</RelativeLayout>

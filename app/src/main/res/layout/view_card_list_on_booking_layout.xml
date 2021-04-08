@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/theme_purple_light"
+        android:layout_marginStart="@dimen/view_margin"
+        android:layout_marginEnd="@dimen/view_margin">
+        <ImageView
+            android:id="@+id/ben_card_image"
+            android:layout_width="40dp"
+            android:contentDescription="@string/manage_cards"
+            android:src="@drawable/card_discover"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/ben_card_number"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            style="@style/TextAppearance.AppCompat.Medium"
+        android:fontFamily="@font/source_sans_pro"
+            android:text=""
+            android:layout_weight="0.8"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+</RelativeLayout>

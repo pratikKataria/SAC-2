@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/input_margin"
+    tools:context=".fragments.ReferFriendsFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/source_sans_pro"
+        android:layout_marginBottom="16dp"
+        android:text="@string/info_card_for_refer"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+            android:id="@+id/referral_buddy_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/firstname_label"
+            android:fontFamily="@font/source_sans_pro_extralight"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+            android:id="@+id/referral_buddy_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+            android:hint="@string/lastname_label"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/referral_ccode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/referral_mobile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9">
+
+            <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                android:id="@+id/referral_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile_label"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/open_contactbook"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:contentDescription="@string/contact_us_label"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_contact_book"/>
+
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:backgroundTint="@color/theme_blue"
+            android:id="@+id/referral_buddy_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_label"
+            android:fontFamily="@font/source_sans_pro_extralight"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_referral"
+        style="@style/GradientSmallButton"
+        android:layout_marginTop="@dimen/input_margin"
+        android:text="@string/submit"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

@@ -1,0 +1,221 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/theme_blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/source_sans_pro</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:backgroundTint">@color/theme_background</item>
+        <item name="android:textViewStyle">@style/SourceSansTextViewStyle</item>
+    </style>
+
+    <!-- current application theme. -->
+    <style name="NoActionBarStyle" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/theme_blue</item>
+        <item name="colorPrimaryDark">@color/theme_blue</item>
+        <item name="android:fontFamily">@font/source_sans_pro</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColorHint">@color/theme_blue</item>
+        <item name="colorControlActivated">@color/theme_blue</item>
+    </style>
+    <style name="SourceSansTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/source_sans_pro</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!--<item name="android:windowBackground">@color/theme_purple</item>-->
+        <item name="android:colorPrimary">@color/theme_purple</item>
+        <item name="colorAccent">@color/theme_blue</item>
+        <item name="colorPrimaryDark">@color/theme_purple</item>
+    </style>
+
+
+    <style name="NormalTextStyle">
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="GreyDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="SmallDivider">
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:alpha">0.2</item>
+        <item name="android:background">@color/theme_purple</item>
+    </style>
+
+    <style name="WhiteDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="HomeTitleStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ListSeparatorStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/colon</item>
+    </style>
+    <style name="MultiButtonBlue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:background">@drawable/rounded_button_blue</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MultiButtonRed">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/rounded_button_red</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MultiButtonGreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/gradient_button</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="GradientButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/gradient_button</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="GradientSmallButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/gradient_button</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+    <style name="GradientThemeSmallButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/gradient_theme_button</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+    <style name="GreySmallButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/gradient_button_grey</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="GradientNegativeSmallButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/oval_bacground_gradient</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ListLabelTextStyle">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ListValueTextStyle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/source_sans_pro</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TransparentNegativeButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="TransparentPositiveButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_blue</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <string name="colon">:</string>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

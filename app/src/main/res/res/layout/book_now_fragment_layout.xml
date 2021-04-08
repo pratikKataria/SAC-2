@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    android:id="@+id/booknow_parent"
+    tools:context=".fragments.BookNowFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/book_now_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/booking_from_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/input_margin"
+                android:layout_marginEnd="@dimen/input_margin">
+
+                <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                    android:id="@+id/book_ben_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/calender_theme"
+                    android:enabled="true"
+                    android:focusable="false"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                    android:hint="@string/booking_date_label"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/booking_from_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/input_margin"
+                android:layout_marginEnd="@dimen/input_margin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="@color/theme_blue"
+                    android:id="@+id/book_ben_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/clock_theme"
+                    android:enabled="false"
+                    android:focusable="false"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                    android:hint="@string/start_time"
+                    android:inputType="date|time" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+        android:fontFamily="@font/source_sans_pro"
+                android:layout_marginStart="@dimen/view_margin"
+                android:layout_marginEnd="@dimen/view_margin"
+                android:gravity="start|center_vertical"
+                android:text="@string/expected_service_duration_hrs"
+                android:textColor="@android:color/background_dark"
+                android:textSize="14sp" />
+            <Spinner
+                android:id="@+id/book_time_dur_hour"
+                android:layout_width="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:prompt="@string/expected_service_duration_hrs"
+                android:gravity="center_horizontal"
+                android:background="@drawable/rounded_border"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/book_ben_address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/input_margin"
+                android:layout_marginEnd="@dimen/input_margin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/book_ben_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:drawableEnd="@drawable/icon_pickup"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                    android:hint="@string/location_label"
+                    android:inputType="textAutoComplete" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/book_ben_apartment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginStart="@dimen/input_margin"
+                android:layout_marginEnd="@dimen/input_margin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/book_ben_apartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                    android:hint="@string/apartment_label"
+                    android:inputType="textAutoComplete"
+                    android:visibility="visible" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/book_ben_zipcode_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginStart="@dimen/input_margin"
+                android:layout_marginEnd="@dimen/input_margin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/book_ben_zipcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                    android:hint="@string/zipcode_label"
+                    android:inputType="number"
+                    android:visibility="visible" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/select_skill_btn"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_border"
+                android:text="@string/select_skill"/>
+            <LinearLayout
+                android:id="@+id/select_skill_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/view_margin">
+                <TextView
+                    android:id="@+id/select_skill_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:textColor="@color/theme_purple"
+                    android:layout_weight="0.9"
+                    android:layout_marginHorizontal="@dimen/input_margin"/>
+                <ImageButton
+                    android:id="@+id/remove_selected_skill_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_cross"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/select_skill_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:textColor="@color/theme_purple"
+                android:layout_marginHorizontal="@dimen/input_margin"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/book_ben_requirements_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/input_margin"
+                android:layout_marginEnd="@dimen/input_margin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/book_ben_requirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_extralight"
+                    android:hint="@string/optional_requirement_label" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/info_choose_buddy_text"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_border"
+                android:padding="5dp"
+                android:text="@string/choose_buddy_txt"
+                android:textAllCaps="false"
+                android:textColor="@color/theme_blue" />
+
+            <TextView
+                android:id="@+id/choosen_buddy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/ic_delete_bin"
+        android:fontFamily="@font/source_sans_pro_semibold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/buddy"
+                android:visibility="gone" />
+            <TextView
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+                android:gravity="center"
+                android:text="@string/available_cards_title" />
+            <RadioGroup
+                android:id="@+id/ben_view_card_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/input_margin"
+                android:layout_marginEnd="@dimen/input_margin">
+
+                <RadioButton
+                    android:id="@+id/rb_ben_card_1"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:fontFamily="@font/source_sans_pro_extralight"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_ben_card_2"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_extralight"
+                    android:visibility="gone" />
+            </RadioGroup>
+            <Button
+                style="@style/GradientSmallButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:id="@+id/submit_booking"
+                android:text="@string/submit"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/location_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>

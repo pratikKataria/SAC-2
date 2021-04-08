@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="12dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_profile_fname_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/input_margin"
+        android:layout_marginEnd="@dimen/input_margin">
+
+        <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+            android:id="@+id/edit_profile_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+            android:hint="@string/firstname_label"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signup_lname_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/input_margin"
+        android:layout_marginEnd="@dimen/input_margin">
+
+        <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+            android:id="@+id/edit_profile_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+            android:hint="@string/lastname_label"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signup_uname_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/input_margin"
+        android:layout_marginEnd="@dimen/input_margin">
+
+        <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+            android:id="@+id/edit_profile_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+            android:hint="@string/username_label"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signup_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/input_margin"
+        android:layout_marginEnd="@dimen/input_margin">
+
+        <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+            android:id="@+id/edit_profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+            android:hint="@string/email_label"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+     <!--   <android.support.design.widget.TextInputLayout
+            android:id="@+id/signup_ccode_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_margin"
+            android:layout_marginEnd="@dimen/input_margin">
+
+            <android.support.design.widget.TextInputEditText android:backgroundTint="@color/theme_blue"
+                android:id="@+id/edit_profile_ccode"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:hint="@string/ccode_label"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>-->
+        <Spinner
+            android:id="@+id/edit_profile_ccode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/view_margin"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signup_mobile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/input_margin">
+
+            <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                android:id="@+id/edit_profile_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                android:hint="@string/mobile_label"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/view_margin"
+        android:layout_marginStart="@dimen/view_margin"
+        android:layout_marginEnd="@dimen/view_margin">
+        <Button
+            android:id="@+id/cancel_edit_profile"
+            style="@style/MultiButtonRed"
+            android:text="@string/cancel"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/proceed_edit_profile"
+            style="@style/MultiButtonGreen"
+            android:text="@string/ok"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_weight="0.5"
+android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/select_start_time_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_purple"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/select_skill_label"/>
+        <LinearLayout
+            android:id="@+id/select_skill_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/input_margin"
+            android:layout_marginEnd="@dimen/input_margin"
+            android:orientation="vertical">
+            <!--skills will be added programmatically-->
+        </LinearLayout>
+        <Button
+            android:id="@+id/add_select_skill_btn"
+            style="@style/GradientSmallButton"
+            android:layout_gravity="center"
+            android:text="@string/ok"/>
+    </LinearLayout>
+</ScrollView>

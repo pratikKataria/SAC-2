@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    tools:context=".fragments.AvailableBuddyFragment">
+
+    <ListView
+        android:id="@+id/list_available_buddy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/available_buddy_frag_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <TextView
+        android:id="@+id/no_buddies_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+            android:fontFamily="@font/source_sans_pro_extralight"
+        android:gravity="center"
+        android:text="@string/no_buddies_available_reason"
+        android:textColor="@color/common_google_signin_btn_text_dark_disabled"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

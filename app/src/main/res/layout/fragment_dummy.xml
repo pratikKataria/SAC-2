@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DummyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        style="@style/TextAppearance.AppCompat.Display3"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+            android:fontFamily="@font/source_sans_pro_extralight"
+        android:maxLines="3"
+        android:text="@string/hello_blank_fragment"
+        android:textStyle="bold|italic" />
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/list_buddy_card_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="155dp"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/view_margin">
+
+        <TextView
+            android:id="@+id/carddetails_text"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/theme_purple"
+        android:fontFamily="@font/source_sans_pro"
+            android:text="@string/payment_details" />
+
+        <ListView
+            android:id="@+id/card_listview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"
+            android:animationCache="false"
+            android:padding="5dp"
+            android:dividerHeight="1dp"
+            android:visibility="visible"
+            android:layout_marginTop="8dp">
+        </ListView>
+        <Button
+            android:id="@+id/add_new_card_btn"
+            style="@style/GradientSmallButton"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="@string/add_new_card" />
+    </LinearLayout>
+</LinearLayout>

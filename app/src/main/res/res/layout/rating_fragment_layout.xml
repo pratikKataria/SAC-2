@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    tools:context=".activities.RatingActivity">
+    <RelativeLayout
+        android:id="@+id/rate_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/theme_gradient_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_title_text_size"
+            android:text="@string/rate_buddy_title_alt"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/rate_scroll"
+        android:layout_below="@+id/rate_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.caringaide.user.utils.RoundedImageView
+                android:id="@+id/iv_feedback_driver_img"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:contentDescription="@string/given_rating"
+                android:src="@drawable/user_avatar"
+                android:layout_centerHorizontal="true" />
+
+
+
+            <TextView
+                android:id="@+id/feedback_ben_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="rama krishna narasimha"
+                android:layout_below="@+id/iv_feedback_driver_img"
+                android:layout_centerHorizontal="true"/>
+            <View
+                style="@style/WhiteDivider"
+                android:layout_below="@+id/iv_feedback_driver_img"
+                android:layout_toLeftOf="@+id/feedback_ben_name" />
+
+            <View
+                style="@style/WhiteDivider"
+                android:layout_below="@+id/iv_feedback_driver_img"
+                android:layout_toRightOf="@+id/feedback_ben_name"/>
+
+            <TextView
+                android:id="@+id/rate_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+        android:fontFamily="@font/source_sans_pro"
+                android:text="@string/rate_label_text"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="@dimen/view_margin"
+                android:layout_below="@+id/feedback_ben_name"
+                android:textDirection="firstStrong"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate_header_text">
+                <include layout="@layout/rate_and_details_layout"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

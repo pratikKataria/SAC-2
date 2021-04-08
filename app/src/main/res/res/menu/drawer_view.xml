@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_ben"
+            android:icon="@drawable/icon_regben"
+            app:actionViewClass="android.widget.TextView"
+            android:title="@string/register_ben" />
+        <item
+            android:id="@+id/show_route"
+            android:icon="@drawable/icon_track_buddy"
+            android:title="@string/track_buddy"
+            app:actionViewClass="android.widget.TextView"
+            />
+        <item
+            android:id="@+id/nav_ongoing_service"
+            android:icon="@drawable/icon_ongoing"
+            android:title="@string/ongoing"
+            app:actionViewClass="android.widget.TextView"
+            />
+
+        <item
+            android:id="@+id/nav_invoice"
+            android:icon="@drawable/invoice"
+            android:title="@string/paid_label" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/icon_setting"
+            android:title="@string/tools" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/question"
+            android:title="@string/help" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/icon_logout"
+            android:title="@string/logout"
+            />
+    </group>
+</menu>

@@ -1,0 +1,742 @@
+<resources>
+    <string name="app_name">CaringAide</string>
+    <string-array name="h12_array">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="hour_array">
+        <!--<item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>-->
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <!--<item>21</item>-->
+        <!--<item>22</item>
+        <item>23</item>-->
+    </string-array>
+    <string-array name="minute_array">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+    <string-array name="time_dur_hour_array">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+    <string-array name="time_dur_min_array">
+        <item>00</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+    <string-array name="country_code_array">
+        <item>+1</item>
+        <item>+91</item>
+    </string-array>
+    <string-array name="meridian_array">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="tipable_percent">
+        <item>25</item>
+        <item>20</item>
+        <item>15</item>
+        <item>10</item>
+        <item>5</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- ************** Permission Messages ************** -->
+    <string name="ANY_PERMISSION">Grant permission to enable this feature</string>
+    <string name="LOCATION_PERMISSION">Location permission is required for accessing service.</string>
+    <string name="LOCATION_PERM_DIALOG_TITLE">Location Permission Required</string>
+    <string name="LOCATION_PERM_DIALOG_MSG">Unable to proceed to app without setting the location permissions right.</string>
+    <string name="CALL_PERMISSION">Please grant permission to make calls from this application</string>
+    <string name="CONTACT_PERMISSION">You won\'t be allowed to choose contacts without this permission</string>
+    <string name="PHOTO_PERMISSION">Grant permission to choose photos</string>
+    <string name="STORAGE_PERMISSION">Grant permission to access storage</string>
+    <string name="PERM_RATIONALE_TITLE">Allow Access</string>
+    <string name="PERM_GENERAL_MSG">If this permission was not allowed earlier, please enable it from settings.\nPermissions are required for the app to work seamlessly.Thank You.</string>
+    <string name="Manifest.permission.ACCESS_FINE_LOCATION">Allow Access To Location</string>
+    <string name="Manifest.permission.READ_CONTACTS">Allow Access To Read Contacts</string>
+    <string name="Manifest.permission.CALL_PHONE">Allow To Make Calls</string>
+    <string name="Manifest.permission.CAMERA">Allow Access To Camera</string>
+    <string name="Manifest.permission.WRITE_EXTERNAL_STORAGE">Allow Access To Storage</string>
+    <string name="UPDATE_SUCCESSFULL">Updated Successfully</string>
+    <string name="UPDATE_FAILED">Failed to update record</string>
+    <string name="ADDITION_FAILED">Failed to add record</string>
+    <string name="DELETE_FAILED">Failed to delete record</string>
+    <string name="DELETED_SUCCESSFULLY">Deleted Successfully.</string>
+    <string name="ADDED_SUCCESSFULLY">Added Successfully.</string>
+    <string name="ADD_FAILED">Booking failed. Please provide the proper credentials.</string>
+    <string name="gps_enable_msg">GPS is not enabled. Please enable it from settings menu?</string>
+    <string name="no_internet">Please check your internet connection</string>
+    <string name="no_google_location">Unable to fetch location details, location not covered.</string>
+    <string name="unknown_error">Unexpected error from the server. Please try again.</string>
+    <string name="ask_cancel">Do you want to cancel your booking? If yes, please provide a valid reason.</string>
+    <string name="confirm_ben_edit_title">Confirm Your Client Edit</string>
+    <string name="confirm_ben_edit_value">Please confirm your edits to the client details.</string>
+    <string name="logout_success">Logout Successful</string>
+    <string name="duplicate_username">Sorry! Username is taken. Please try another.</string>
+    <string name="ask_cancel_title">Cancel Booking</string>
+    <string name="rating_success_title">Rating Successful</string>
+    <string name="rating_success_data">Thank you for your valuable feedback</string>
+    <string name="booking_success">Your booking Added Successfully.</string>
+    <string name="cancel_request_error">Cancellation Failed!</string>
+    <string name="cancel_done">"Cancellation successful.</string>
+    <string name="refer_succesfull_message">Congrats! Friend referral successful. Please share the reference token with your friend. They should use the code when registering with the app. Thank you!\n Referral Token: </string>
+    <string name="booking_done_title">Booking successful</string>
+    <string name="select_card_err">Please select any of the payment option to continue booking.</string>
+    <string name="confirm_adding_ben">Confirm Client Addition</string>
+    <string name="ask_register_beneficiary">Please confirm your new client.</string>
+    <string name="client_added_success">Your client successfully added. Please add payment details next.</string>
+    <string name="add_ben_success">Client successfully added</string>
+    <string name="remove_buddy_title">Remove Buddy</string>
+    <string name="ask_delete_buddy">Do you want to remove your buddy from the favorite list?</string>
+    <string name="remove_buddies_success">Removed buddy from favorites list successfully.</string>
+    <string name="delete_all_buddy">Clear All Buddies</string>
+    <string name="no_data_add_ben">No client found.\n No clients are registered. Please register a client to continue with your booking.</string>
+    <string name="ask_delete_all_buddy">Do you want to clear all your favorite buddies?</string>
+    <string name="delete_all_buddy_success">Cleared all buddies successfully.</string>
+    <string name="add_buddy_title">Buddy Addition</string>
+    <string name="ask_add_fav_buddy">Do you want to add the selected buddy to your favorites list?</string>
+    <string name="buddy_added_success">Buddy successfully added to the favorite list</string>
+    <string name="edit_buddies">Client Edited</string>
+    <string name="edit_buddies_failed">Failed to edit client</string>
+    <string name="edit_user_failed">Failed to edit user profile</string>
+    <string name="edit_buddies_success">Client successfully edited.</string>
+    <string name="user_profile_title">User Profile</string>
+    <string name="user_profile_img_title">Profile Image</string>
+    <string name="user_profile_img_success">Profile image updated successfully.</string>
+    <string name="user_profile_edited_success">User profile successfully updated</string>
+    <string name="ask_username">Please provide a valid username</string>
+    <string name="ask_password">Please provide a valid password</string>
+    <string name="ask_name_length">Length of name should be between&#160;</string>
+    <string name="ask_uname_length">Length of user name should be between 5 and 20</string>
+    <string name="info_uname">Username can contain a minimum of 5 and maximum of 30 characers.Only alphanumeric characters are allowed.Special characters allowed are - _ @ .</string>
+    <string name="ask_fullname_length">Length of  full name should be between&#160;</string>
+    <string name="ask_relation_length">Length of relation type should be between&#160;</string>
+    <string name="ask_fname">Please enter a valid first name</string>
+    <string name="ask_lname">Please enter a valid last name</string>
+    <string name="ask_name">Please enter a valid name</string>
+    <string name="ask_zip">Please enter a valid zipcode</string>
+    <string name="match_password">Passwords does not match</string>
+    <string name="enter_otp_label_text">Enter the OTP received on your mobile number.</string>
+    <string name="ask_dob">Please enter a valid date of birth</string>
+    <string name="ask_address">Please enter a valid address.</string>
+    <string name="addr_len_err">Length should be between&#160;</string>
+    <string name="ask_valid_fullname">Please enter a valid full name.</string>
+    <string name="ask_valid_relaation">Please enter a valid relation type.</string>
+    <string name="ask_nickname">Please enter a valid nickname.</string>
+    <string name="ask_email">Please enter a valid email</string>
+    <string name="ask_card_num">Please enter a valid card number</string>
+    <string name="ask_card_exp">Please enter a valid expiryDate</string>
+    <string name="ask_card_cvv">Please enter cvv</string>
+    <string name="ask_select_skill">Please select any of the services you like to have.</string>
+    <string name="err_duration_btw0">Sorry! We only provide service from&#160;</string>
+    <string name="err_max_duration0">Sorry! We only provide service till&#160;</string>
+    <string name="err_max_duration1">&#160;PM.</string>
+    <string name="min_duration_label">&#160;Minimum duration is</string>
+    <string name="am_label">&#160;AM&#160;</string>
+    <string name="err_max_duration2">&#160;Your selected duration exceeds our service time by</string>
+    <string name="rating_error">Values cannot be zero</string>
+    <string name="ask_reason">Please provide a valid reason for your cancellation.(</string>
+    <string name="charecters_allowed">&#160;charecters allowed)</string>
+    <string name="underrate_subheader_text">Help us improve</string>
+    <string name="rate_subheader_text">What satisfied you in the previous service?</string>
+    <string name="rate_label_text">Did you enjoy the service? \n Please rate us.</string>
+    <string name="available_whole_day">Available throughout the day.</string>
+    <string name="unavailable_whole_day">Unvailable throughout the day.</string>
+    <string name="info_choose_buddy_premium">Tap \'Proceed\' if you want to choose a specific Buddy. Tap \'No\' to be randomly assigned to a buddy based on your requirements.</string>
+    <string name="info_forgot_pwd">Note: You can use your username or mobile number to reset the password.</string>
+    <string name="change_password">Reset Password</string>
+    <string name="change_password_subtitle">Resetting the password will logout you out of the current session</string>
+    <string name="enter_zipcode">Enter zip code</string>
+    <string name="info_check_zipcode">Check for service in your area.</string>
+    <string name="ask_service_receiver">Service requested for: </string>
+    <string name="gender">Gender</string>
+    <string name="ask_select_language">Select Language</string>
+    <string name="payment_details">Card Details</string>
+    <string name="proceed_adding_card">Do you want to proceed adding a card?</string>
+    <string name="card_added_success">Card details added successfully.</string>
+    <string name="card_deleted_success">Card deleted successfully.</string>
+    <string name="card_delete">Delete card.</string>
+    <string name="card_added_failed">Card failed to add.Please try again.</string>
+    <string name="card_delete_failed">Card failed to delete.Please try again.</string>
+    <string name="card_token_failed">Retrieving token failed.Please try again.</string>
+    <string name="expected_service_duration_hrs">Expected duration (Hrs)</string>
+    <string name="service_end_date">Expected end time</string>
+    <string name="booking_date_label">Date of Service</string><!--(MM/dd/yyyy)-->
+    <string name="expected_service_duration">Requested duration</string>
+    <string name="requirements_label">My requirements</string>
+    <string name="location_label">Location</string>
+    <string name="booking_id">Booking id</string>
+    <string name="sample_ben_name">Client Name</string>
+    <string name="buddy_name_label">Buddy Name</string>
+    <string name="disclaimer_title">DISCLAIMER</string>
+    <string name="ask_check_tc">Click on the checkbox to agree with the terms and conditions. You can also read our terms and conditions by clicking on \'terms and conditions\'.</string>
+    <string name="ask_check_age">Please make sure you meet the age requirement.</string>
+    <string name="ask_logout_title">Confirm Logout</string>
+    <string name="ask_logout">Do you want to log out?</string>
+    <string name="already_logout">You are logged out. Please Login again with new credentials.</string>
+    <string name="agree_disclaimer">By using CaringAide Website, Software, and Services, YOU AGREE THAT USE OF OUR WEBSITE, SOFTWARE, AND THE SERVICES IS WITH YOUR AWARENESS, FULL KNOWLEDGE AND IS ENTIRELY AT YOUR OWN RISK. CARINGAIDE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND. TO THE FULLEST EXTENT PERMITTED BY LAW; 1) ALL EXPRESS IMPLIED AND STATUTORY WARRANTIES, INCLUDING BUT NOT LIMITED TO, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT OF PROPRIETARY RIGHTS ARE EXPRESSLY DISCLAIMED. 2) CARINGAIDE DISCLAIMS ANY WARRANTIES FOR THE SECURITY, RELIABILITY, TIMELINESS, ACCURACY, AND PERFORMANCE OF THE SITE AND THE SERVICES. 3) CARINGAIDE DOES NOT GUARENTEE THAT IT’S WEBSITE, SOFTWARE OR THE SERVICES OFFERED WILL BE UNINTERRUPTED OR ERROR-FREE. 4) CARINGAIDE DISCLAIMS ANY WARRANTIES FOR OTHER SERVICES OR GOODS RECEIVED THROUGH OR ADVERTISED ON THE SITE OR THE SERVICES ACCESSED THROUGH ANY LINKS ON THE SITE. 5)  CARINGAIDE FURTHER DISCLAIM ANY WARRANTIES FOR VIRUSES OR OTHER HARMFUL COMPONENTS IN CONNECTION WITH THE CARINGAIDE.COM SITE OR ANY SERVICES OFFERED BY CARINDAIDE. CARINGAIDE DOES NOT GUARANTEE THE QUALITY, SUITABILITY, SAFETY OR ABILITY OF THIRD-PARTY PROVIDERS OR SERVICE PROVIDERS OR ANYTHING THAT IS NOT OWNED OR MANAGED BY CARINGAIDE.
+Some jurisdictions do not allow the disclaimer of implied warranties. In such jurisdictions,the foregoing disclaimers may not apply to you insofar as they relate to implied warranties. This provision shall survive termination of this Agreement.
+</string>
+    <string name="tip_added_success">Thank You! Tip added successfully.</string>
+    <string name="err_pending_fares">Sorry! Tip failed to add.Please try again later.</string>
+    <string name="tip_time_out">Thank you for trying. You are out of time. Please try again later.</string>
+    <string name="not_yet_reg">New User? <u>SignUp</u>.</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_label">Login</string>
+    <string name="book_now_label">Book Now</string>
+    <string name="submit">Submit</string>
+    <string name="select_buddy">Choose Buddy</string>
+    <string name="add_new_buddy">Add a new buddy</string>
+    <string name="remove_buddies">Clear all buddies</string>
+    <string name="info_choose_fav_buddy">Add your buddies to the favorites list for easy bookings.</string>
+    <string name="no_payment">*You cannot book an appointment for this person because there are no payment details added to their account.</string>
+    <string name="too_large_image">Image size should be less than </string>
+    <string name="try_another_img">&#160;Please try another image </string>
+    <string name="available_schd_title">Please check your Buddy\'s schedule before proceeding with your booking.</string>
+    <string name="alert_select_buddy">Please make sure your service time matches with the Buddy\'s schedule. You can also cancel and select another Buddy from your Favorite Buddies, or be randomly assigned to a Buddy in your area.</string>
+    <string name="book_with_new_card">Unable to authorize the card with GlobalPayments. Please add a new card and continue booking.</string>
+    <string name="book_with_another_card">Unable to authorize the card with GlobalPayments. Please use a different card and continue booking.</string>
+    <string name="info_card_for_refer">Please make sure card details are added for getting referral benefits.</string>
+    <string name="no_service_area">Sorry, we don\'t serve your area.</string>
+    <string name="servicable_area">We serve your area.</string>
+
+
+    <string name="req_timeout">Request Timeout</string>
+    <string name="connect_error">Unable to communicate with the server, please check your internet connection.</string>
+    <string name="res_not_found">Resource not found</string>
+    <string name="login_again">You are unauthorized to perform this action. Please check if you are logged in.</string>
+    <string name="wrong_input">Check your inputs</string>
+    <string name="device_not_supported">Device not supported</string>
+    <string name="no_location">Unable to fetch location details,check GPS and Internet connectivity or try restarting the device.</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">View</string>
+    <string name="tools">Settings</string>
+    <string name="import_va">Camera</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="handshake_error">The server responded with an error during handshake.</string>
+    <string name="network_error">Seems you are not connected.</string>
+    <string name="country_error">Error while retrieving country details.</string>
+    <string name="service_error">Error while loading available services</string>
+    <string name="fare_error">Error while retrieving fare details.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="signup_label">Signup</string>
+    <string name="signup_title">Signup</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="user_not_exists">No user exists with these details.</string>
+    <string name="login_fail">Login failed. Please provide the proper credentials.</string>
+    <string name="login_succ">Login Sucess</string>
+    <string name="firstname_label">First Name</string>
+    <string name="lastname_label">Last Name</string>
+    <string name="mobile_label">Mobile</string>
+    <string name="email_label">Email</string>
+    <string name="ccode_label">(+1)</string>
+    <string name="male_label">Male</string>
+    <string name="female_label">Female</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="password_content_info">Password Info</string>
+    <string name="username_content_info">UserName Info</string>
+    <string name="dob_label">Date of Birth (MM/dd/yyyy)</string>
+    <string name="booking_to_date_label">Booking To (yyyy-MM-dd)</string>
+    <string name="dob_label_without_hint">Date Of Birth</string>
+    <string name="age_label">Age</string>
+    <string name="verify">Verify</string>
+    <string name="or_label">or</string>
+    <string name="otp_hint">Enter OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="ok">OK</string>
+    <string name="otp_error">Error while getting OTP</string>
+    <string name="update_failed">Failed to update record</string>
+    <string name="forgot_success">Password reset successful. Please Login to continue.</string>
+    <string name="update_successfull">Update successfull</string>
+    <string name="ask_mobile">Please enter valid mobile number</string>
+    <string name="zipcode_label">Zipcode</string>
+    <string name="signup_failed">Sign-up failed. Please provide the proper credentials.</string>
+    <string name="signup_succ_title">Sign Up Successful</string>
+    <string name="signup_succ">Your sign up was successful!</string>
+    <string name="ask_password_format">Password should have one uppercase,one lowercase, one number and special character</string>
+    <string name="ask_gender">Please select gender</string>
+    <string name="bookings">Book Now</string>
+    <string name="check">Check</string>
+    <string name="register_ben">Add Client</string>
+    <string name="select_beneficiary">Client List</string>
+    <string name="fullname_label">Enter Full Name</string>
+    <string name="regben_type_label">How is he/she related to you?</string>
+    <string name="nickname_label">Enter Nick Name</string>
+    <string name="address_label">Address</string>
+    <string name="city_label">City</string>
+    <string name="state_label">State</string>
+    <string name="country_label">Country</string>
+    <string name="basic_label">Basic</string>
+    <string name="select_label">Select</string>
+    <string name="premium_label">Premium</string>
+    <string name="choose_plan_label">Choose Plan</string>
+    <string name="select_payment_label">Select Payment Options</string>
+    <string name="str_image_empty_desc">card_details_image</string>
+    <string name="card_num_label">Card Number</string>
+    <string name="month_label">MM</string>
+    <string name="year_label">YYYY</string>
+    <string name="cvv_label">CVV</string>
+    <string name="additional_info">Additional Information (Optional)</string>
+    <string name="city_error">Error while loading cities</string>
+    <string name="zip_error">Error while loading zipcode</string>
+    <string name="general_book_date_format">yyyy-MM-dd</string>
+    <string name="general_book_date_time_format">yyyy-MM-dd HH:mm</string>
+    <string name="general_date_alone_format">MM/dd/yyyy</string>
+    <string name="general_date_time_format">MM/dd/yyyy HH:mm</string>
+    <string name="select_time">Select Date of Birth</string>
+    <string name="select_booking_fromdate">Select Booking Date</string>
+    <string name="select_booking_todate">Select to Date</string>
+    <string name="pick_time_label">Choose Time\n(hr:min)</string>
+    <string name="ask_valid_dob">You should be&#160;</string>
+    <string name="to_avail_service">&#160;years or older to avail the service</string>
+    <string name="ask_requirements">Please enter valid details about your client (Minimum 7 characters)</string>
+    <string name="add_ben_failed">Error while adding client</string>
+    <string name="list_ben_failed">Failed to list client</string>
+    <string name="language_label">Language</string>
+    <string name="duration">Time Duration\n (hrs)</string>
+    <string name="select_skill">Pick a service</string>
+    <string name="buddy_skill_failed">Failed to load buddy skills</string>
+    <string name="map_choose_location">Choose Location</string>
+    <string name="map_search_location">Search Location</string>
+    <string name="apartment_label">Address / Apartment Details (Optional)</string>
+    <string name="optional_requirement_label">Any additional requirements (Optional)</string>
+    <string name="ask_date">Booking date can\'t be empty</string>
+    <string name="ask_date_time">Booking time can\'t be empty</string>
+    <string name="ask_proper_time">Time should be&#160;</string>
+    <string name="ahead_of_time">&#160; ahead of the current time</string>
+    <string name="ask_proper_to_time">End Time should be 1 hour ahead of the start time</string>
+    <string name="ask_time_duration">Please enter valid time duration</string>
+    <string name="ask_proper_time_duration">Time duration can\'t be this much long</string>
+    <string name="ask_apartment">Please enter a valid address/apartment details (Min 3 letters, characters accepted are alphabets, numbers and special characters $-.@_ \',/). (Optional)</string>
+    <string name="info_time_dur_text"><b>Note:</b> Maximum time duration for service is limited to</string>
+    <string name="booking_for">Book for</string>
+    <string name="logout">Logout</string>
+    <string name="hour_label">&#160;hours</string>
+    <string name="min_label">&#160;minutes</string>
+<!--    <string name="pending_label">Requests for favorite buddies</string>-->
+    <string name="pending_label">List of pending service requests</string>
+    <string name="start_label">Ongoing Services</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="cancel_label">Cancelled Requests</string>
+    <string name="end_label">Completed Services</string>
+    <string name="paid_label">Invoice</string>
+    <string name="confirmed_label">Confirmed Requests</string>
+    <string name="broadcast_label">Pending Requests</string>
+    <string name="user">User</string>
+    <string name="buddy">Buddy</string>
+    <string name="logout_failed">Logout Failed!</string>
+    <string name="data_cancel">cancel</string>
+    <string name="ask_confirm_ride">Confirm Ride?</string>
+    <string name="data_confirm">confirm</string>
+    <string name="confirm_list_error">Error while loading confirm lists</string>
+    <string name="cancel_list_title">List of cancelled services</string>
+    <string name="end_list_error">Failed to get service end lsit</string>
+    <string name="data_end">end</string>
+    <string name="broadcast_list_title">List of broadcast service requests</string>
+    <string name="pending_list_error">Error while loading pending lists</string>
+    <string name="data_pending">pending</string>
+    <string name="confirm_list_title">List of confirmed service requests</string>
+    <string name="end_list_title">List of ended services</string>
+    <string name="data_paid">paid</string>
+    <string name="select_skill_label">Select Skill</string>
+    <string name="service_date">Service date</string>
+    <string name="start_time">Start Time (hh:mm)</string>
+    <string name="start_time_label">Start Time</string>
+    <string name="service_start_date">Service start time</string>
+    <string name="select_start_time">Select Start Time</string>
+    <string name="expected_start_date">Expected start time</string>
+    <string name="about">Details</string>
+    <string name="about_me">About Me</string>
+    <string name="cancel_reason">Reason for cancelling :</string>
+    <string name="cancelld_by">Cancelled by</string>
+    <!--<string name="expected_duration">Expected duration</string>-->
+    <string name="service_duration">Service duration</string>
+    <string name="required_skill">Required skill</string>
+    <string name="pending_rate">Rate</string>
+    <string name="paid_list_title">List of Paid Services</string>
+    <string name="total_amount">Total fare</string>
+    <string name="enter_amount">Amount</string>
+    <string name="given_rating">Rating</string>
+    <string name="comments">Comments</string>
+    <string name="pending_list_title">List of pending service requests</string>
+    <string name="no_data">No Data</string>
+    <string name="ongoing_list_title">List of ongoing services</string>
+    <string name="data_start">start</string>
+    <string name="ongoing_list_error">Error while loading ongoing service list</string>
+    <string name="remove">Remove</string>
+    <string name="view_schedule">Please check my availability before booking</string>
+    <string name="add_beneficiary">Add client</string>
+    <string name="add_label">Add</string>
+    <string name="buddy_list_failed">Failed to list buddies</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="remove_buddies_failed">Failed to remove buddies</string>
+    <string name="buddy_added_failed">Failed to add buddies</string>
+    <string name="edit_beneficiary_label">Edit Client</string>
+    <string name="edit_user_label">Edit User</string>
+    <string name="ask_zip_for_city">Please enter a valid zipcode for getting city</string>
+    <string name="ask_zip_for_state">Please enter valid zipcode for getting state</string>
+    <string name="delete_beneficiary_label">Delete Client</string>
+    <string name="get_schedule_failed">Failed to get buddy\'s timing schedules.</string>
+    <string name="zero_time">00:00:00</string>
+    <string name="double_zero">00</string>
+    <string name="to">&#160;to&#160;</string>
+    <string name="started_since">Service Time</string>
+    <string name="pending_sublabel">List of service requests pending with favorite buddies.</string>
+    <string name="broadcast_sublabel">List of all pending service requests with buddies.</string>
+    <string name="confirmed_sublabel">Service requests confirmed by buddies.</string>
+    <string name="ongoing_sublabel">All services currently attended by buddies.</string>
+    <string name="cancel_sublabel">Requests that got cancelled.</string>
+    <string name="end_sublabel">Successfully completed services by buddies.</string>
+    <string name="paid_sublabel">Details of payment done for different services.</string>
+    <string name="pay_label">Pay</string>
+    <string name="proceed_label">Proceed</string>
+    <string name="proceed_payment">Proceed Payment</string>
+    <string name="company_info"> \u00A9  Powered by Cybernova IT Solutions</string>
+    <string name="base_fare_label">Base Fare</string>
+    <string name="tax_label">Tax</string>
+    <string name="extra_time_label">Extra Time</string>
+    <string name="extra_rate_label">Extra Rate</string>
+    <string name="fare_details">Fare Details</string>
+    <string name="info_service_complete">Hi! Service completed. Please proceed with the payment.</string>
+    <string name="done_label">Done!</string>
+    <string name="rate_buddy_feedback_text">Give your feedback (max 1000 words)</string>
+    <string name="rate_behaviour">Behaviour</string>
+    <string name="rate_companionship">Companionship</string>
+    <string name="rate_attitude">Attitude</string>
+    <string name="rate_hosting">Language</string>
+    <string name="get_fare_error">Failed to get fares</string>
+    <string name="cancel_list_error">Failed to load cancel lists</string>
+    <string name="post_login_fail">Post login failure. Please try again after some time.</string>
+    <string name="track_buddy_label">Track Buddy on Service</string>
+    <string name="track_buddy">Track Buddy</string>
+    <string name="route_map_label">Route Map</string>
+    <string name="transit_label">transit</string>
+    <string name="transit_list_error">Error while loading transit list</string>
+    <string name="ben_name_label">Client Name</string>
+    <string name="buddy_details_error">Error while loading buddy detials</string>
+    <string name="beneficiary_label">Client:</string>
+    <string name="show_more_label">Show More..</string>
+    <string name="more_details">More Details</string>
+    <string name="paid_success">Payment done successfully</string>
+    <string name="rate_btn_label">Rate</string>
+    <string name="rate_fail">Failed to save the rating</string>
+    <string name="total_fare">Total Fare</string>
+    <string name="save_feedback_fail">Failed to save feedback</string>
+    <string name="not_now">Not Now</string>
+    <string name="rate_buddy_title">Rate Buddy</string>
+    <string name="rate_buddy_title_alt">Buddy Rating</string>
+    <string name="others">Other</string>
+    <string name="others_label">Others</string>
+    <string name="self">self</string>
+    <string name="select_relation">Please select relation from the list</string>
+    <string name="relation_label">Relation</string>
+    <string name="select_language">Please select language from the list</string>
+    <string name="optional_choose_buddy">You can choose your favorite buddy from the list. If not, request will be broadcast to all buddies.</string>
+
+    <!-- Notification Messages -->
+    <string name="new_booking_title">New Booking</string>
+    <string name="new_booking_title_for_buddy">There is a new booking from one of your client.</string>
+    <string name="booking_cancelled_title">Booking is cancelled.</string>
+    <string name="new_booking_body">New booking by clients.</string>
+    <string name="new_booking_body_for_buddy">New booking from user.</string>
+    <string name="booking_cancelled_body">Booking is cancelled. Please check cancelled tab for more info.</string>
+    <string name="channel_name">buddy_android</string>
+    <string name="channel_description">notification channel for buddy</string>
+    <string name="booking_confirmed_title_by_buddy">Booking confirmed</string>
+    <string name="booking_confirmed_by_buddy">Booking confirmed by buddy. See confirm tab for details.</string>
+    <string name="booking_ended_title_by_buddy">Booking Ended</string>
+    <string name="booking_ended_body">Hi, Service is ended now. Please visit completed tab for proceeding payment.</string>
+    <string name="service_started_body">Hi, requested service has been started. Visit \'Ongoing\' tab for more details.</string>
+    <string name="booking_start_title_by_buddy">Service started</string>
+    <string name="full_name_label">Full Name</string>
+    <string name="old_password_hint">Enter Old Password</string>
+    <string name="new_password_hint">Enter New Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="manage_beneficiairies">Manage Clients</string>
+    <string name="manage_cards">Manage Cards</string>
+    <string name="manage_cards_underlined"><u><b>Manage Cards</b></u></string>
+    <string name="remove_benef_failed">Failed to remove client</string>
+    <string name="remove_benef_success">Your client deleted successfully!</string>
+    <string name="remove_benef_card_success">Card detail is removed successfully .</string>
+    <string name="buddy_already_added">The buddy you are trying to add is already your favorite buddy.</string>
+    <string name="choose_buddy_txt"><b>Choose Buddy</b></string>
+    <string name="list_fav_buddy_txt"><u><b>List Favorite Buddies</b></u></string>
+    <string name="remove_selection">Remove Selection</string>
+    <string name="back_online">Back Online</string>
+    <string name="go">Go</string>
+    <string name="unauthorized_login">You are unauthorized to perform this action. Please check if you are logged in.</string>
+    <string name="rate_by_buddy">Rating given by buddy</string>
+    <string name="optional_txt">&#160;(Optional)</string>
+    <string name="ask_confirm_booking">Please confirm your booking</string>
+    <string name="confirm_booking_title">Confirm booking</string>
+    <string name="duration_details">The expected service duration will be</string>
+    <string name="mid_space">&#160;</string>
+    <string name="i_agree">I agree to the&#160;</string>
+    <string name="agree_terms_privacy">Terms and Conditions&#160;</string>
+    <string name="agree_privacy_policy">Privacy Policy</string>
+    <string name="agree_age">I am 18+</string>
+    <string name="booking_failed">Failed to book for client.</string>
+    <string name="fill_mandatory_fields">Please fill out all mandatory fields.</string>
+    <string name="tc_title">Terms and conditions of use</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="please_wait">Please wait</string>
+    <string name="no_reason">No specific reason</string>
+    <string name="no_buddies_available_reason">No buddies available</string>
+    <string name="no_requirements">No Specific Requirement</string>
+    <string name="wrong_otp">Wrong OTP</string>
+    <string name="payment_failed">Payment failed.</string>
+    <string name="already_in_service">You are already in a service. Action not allowed.</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="add_card_title">Add Card Details</string>
+    <string name="select_city">Select City</string>
+    <string name="no_profile_image">No image</string>
+    <string name="ask_delete_beneficiary">Do you want to delete the client from your list?</string>
+    <string name="your_buddy">Your buddy</string>
+    <string name="on_the_way">is on the way</string>
+    <string name="started_service">started the service</string>
+    <string name="error_label">Error</string>
+    <string name="done">Done</string>
+    <string name="ask_country_code">Country code for the mobile number is invalid.</string>
+    <string name="info_password_title">Password Info</string>
+    <string name="info_username_title">Username Info</string>
+    <string name="info_password">Password must contain a minimum of eight characters, one uppercase letter, one lowercase letter, one number, and one special character.</string>
+    <string name="info_username">Length of user name should be between 5 and 20.</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="card_details">Card Details</string>
+    <string name="cardholder_name">Card Holder Name</string>
+    <string name="card_expiry_label">Card Expiry</string>
+    <string name="slash">/</string>
+    <string name="card_cvv">Card CVV</string>
+    <string name="info_label">Info</string>
+    <string name="info_remove_buddy">Selected buddy will be removed. You can proceed without assigning the buddy. Continue?</string>
+    <string name="us_ccode">+1</string>
+    <string name="ind_ccode">+91</string>
+    <string name="ask_expiry_month">Please enter valid card expiry month.</string>
+    <string name="ask_credit_card">Please enter valid card.</string>
+    <string name="ask_expiry_year">Please enter valid card expiry year.</string>
+    <string name="ask_expiry_cvv">Please enter valid cvv.</string>
+    <string name="ask_expiry_date">Please enter valid expiry date.</string>
+    <string name="get_card_error">Failed to retrieve card info</string>
+    <string name="available_cards_title">Select a Payment Option</string>
+    <string name="get_announcement_failed">Failed to retrieve announcements for users</string>
+    <string name="buddy_in_transit_title">Buddy is on the way.</string>
+    <string name="verify_buddy_title">Verify Buddy</string>
+    <string name="verify_buddy_message">An OTP is forwarded to your registered mobile to verify the buddy. Please share the token with the buddy to start the service.</string>
+    <string name="info_have_start_service">You currently have an active service</string>
+    <string name="alert_active_services">You currently have an active service. Please review it on \'Track Buddy\' option in menu.</string>
+    <string name="apply_ref_code">Do you have a referral code?</string>
+    <string name="enter_referral_code">Enter Referral Code</string>
+    <string name="refer_friends">Refer a Friend</string>
+    <string name="refer_friend_failed">Request failed. Please provide the proper credentials.</string>
+    <string name="not_authorized_mkt_code">Unable to refer client. You are not authorized for this action.</string>
+    <string name="not_valid_offer">This offer is not valid anymore.</string>
+    <string name="addition_failed_mkt_code">Unable to refer client. Please try later.</string>
+    <string name="empty_response">Server Error!! Response is empty.&#160;</string>
+    <string name="end_time_label">End Time</string>
+    <string name="tip_ur_buddy">Tip Your Buddy</string>
+    <string name="ask_enter_amount">Please enter a valid amount</string>
+    <string name="ask_enter_tip_amount">Please enter a valid considerable amount than those in the list.</string>
+    <string name="tip_amount">Tips</string>
+    <string name="validate">Validate</string>
+    <string name="book_now_subhead">Book a service for your loved ones.</string>
+    <string name="mybookings_label">My Bookings</string>
+    <string name="mybookings_subhead">View a list of all your booking history, past transactions and payment information.</string>
+    <string name="under_construction">Card addition functionality is on progress.</string>
+    <string name="no_bookings">No Bookings Found.</string>
+    <string name="no_bookings_available">No bookings are available.</string>
+    <string name="resend_otp_failed">Request to resend OTP failed. Please try again.</string>
+    <string name="ask_reason_length">The length should be between</string>
+    <string name="ask_billing_country">Please enter a valid country</string>
+    <string name="ask_billing_state">Please provide a valid billing state</string>
+    <string name="ask_billing_city">Please provide a valid city</string>
+    <string name="and_label">&#160;and&#160;</string>
+    <string name="invalid_card">Card number is not valid</string>
+    <string name="ask_whole_card_num">Enter complete valid card number ...</string>
+    <string name="card_not_handled">Card not handled now.</string>
+    <string name="title_activity_alt_home">CaringAide</string>
+    <string name="action_settings">Settings</string>
+    <string name="error_date_time">Please provide a proper date and time</string>
+    <string name="config_error">Error while loading config data</string>
+    <string name="info_ride_limit_miles">Ride is allowed within a radius of&#160;</string>
+    <string name="miles_label">&#160;miles.</string>
+    <string name="try_login_aftr_label">You are allowed to login after&#160;</string>
+    <string name="try_refresh_aftr_label">Try refreshing the list after&#160;</string>
+    <string name="seconds_label">&#160;seconds.</string>
+    <string name="signng_in">Signing in…</string>
+    <string name="call_who_label">Call&#160;</string>
+    <string name="connecting_label">Connecting...</string>
+    <string name="call_user_error">Unable to make a call now. Please try after sometime.</string>
+    <string name="permission_granted">Permission granted.</string>
+    <string name="access_take_photo">&#160;You can take photo by clicking the button again.</string>
+    <string name="access_choose_photo">&#160;You can choose image from gallery by clicking the button again.</string>
+    <string name="access_call">&#160;You can call the buddy by clicking the button again.</string>
+    <string name="no_proxy">Unable to make the call now. Please try later.</string>
+    <string name="actual_end_time">Service end time</string>
+    <string name="billing_add_apartment_label">Apartment Details (Optional)</string>
+    <string name="system">System</string>
+    <string name="reset_password_success_title">Password Reset</string>
+    <string name="forgot_failed">Failed to reset password. Please try again.</string>
+    <string name="note_label">Note</string>
+    <string name="no_client">No Client</string>
+    <string name="dot_label">.&#160;</string>
+    <string name="info_no_client">You don\'t have any registered clients. Please add a new client to continue with the booking.</string>
+    <string name="ride_label">Ride</string>
+    <string name="err_string_spchar_number">Entered name is invalid. It contains both special characters and numbers.</string>
+    <string name="err_string_spchar">Entered name is invalid. It contains special characters.</string>
+    <string name="err_string_number">Entered name is invalid. It contains numbers.</string>
+    <string name="amount_paid">Total Billed Amount</string>
+    <string name="choose_tip">Choose Tip</string>
+    <string name="ask_choose_tip">Please choose tip amount.</string>
+    <string name="tip_amt_hint">Tip Amount</string>
+    <string name="other_tip_info">Do you want to enter an amount of your choice?</string>
+    <string name="requested_duration">Requested duration</string>
+    <string name="extn_duration">Extended duration</string>
+    <string name="help">Help</string>
+    <string name="legal_tc_label">Legal, Terms &amp; Conditions</string>
+    <string name="faq_label">FAQs</string>
+    <string name="contact_us_label">Contact Us</string>
+    <string name="refund_policy_label">Refund Policy</string>
+    <string name="privacy_policy_label">Privacy Policy</string>
+    <string name="call_us_on">Call us on</string>
+    <string name="faq">FAQ</string>
+    <string name="common_faq">Common FAQs will appear here</string>
+    <string name="extended_dur">Extended duration</string>
+    <string name="refresh">Refresh</string>
+    <string name="info_max_wrong_otp_attempts">Wrong OTP. No more attempts. Please place a new request.</string>
+    <string name="invalid_ref_code">Check if the reference token and mobile number matches with the data used for reference.</string>
+    <string name="duplicate_self">Self already exists. Please try adding a different client.</string>
+    <string name="annoouncements">Announcements to users</string>
+
+    <string name="rate_beneficiary_title">Rate Client</string>
+    <string name="rate_buddy_data">Do you want to rate buddy now?</string>
+
+
+    <string name="pending_nearest_booking">Your service request for %1$s at %2$s is pending. Waiting for buddy confirmation.</string>
+    <string name="pending_fav_nearest_booking">Your service request to buddy %1$s for %2$s at %3$s is pending. Waiting for buddy confirmation.</string>
+    <string name="pending_30_nearest_booking">Your service request for %1$s at %2$s is not yet confirmed. This request will expire in %3$s.</string>
+    <string name="pending_30_fav_nearest_booking">Your service request to buddy %1$s for %2$s at %3$s is not yet confirmed. This request will expire in %4$s. Please contact %1$s.</string>
+
+    <string name="pending_favcounts_booking">Total bookings to favorite buddies : %1$d</string>
+    <string name="pending_favcount_booking">There is a booking for your favorite buddy.</string>
+    <string name="other_count_booking">Other booking(s) : %1$d</string>
+    <string name="only_other_booking">Total booking(s) : %1$d</string>
+    <string name="confirm_booking_status">Your service request with booking id %1$s for %2$s at %3$s has confirmed by buddy %4$s.</string>
+    <string name="confirm_90m_booking_status">Your upcoming booking for %1$s with booking id %2$s is expected to start within %3$s by buddy %4$s</string>
+    <string name="confirm_30m_booking_status">Your upcoming booking for %1$s with booking id %2$s is expected to start within %3$s by buddy %4$s. Please contact buddy, if needed.</string>
+    <string name="confirm_0m_booking_status">Your booking with booking id %1$s at %2$s for buddy %3$s has expired. Please contact buddy.</string>
+    <string name="no_recent_cancel">No recent cancellation</string>
+    <string name="cancel_booking_status">Booking with booking id %1$s was recently cancelled at %2$s by %3$s.</string>
+    <string name="no_cancel_bookings">No cancelled bookings</string>
+    <string name="call_limit_exceeded">You have exceeded the maximum number of calls to buddy</string>
+    <string name="move_page">Click to go next page</string>
+    <string name="ask_password_length">Password length should be between %1$d and %2$d</string>
+    <string name="close">Close</string>
+    <string name="google_map_api_key">ASDFASDwreijsfmd</string>
+    <string name="server_url">http://superaides-env.eba-mzmvkppp.ap-south-1.elasticbeanstalk.com/</string>
+
+
+    <!--***** -->
+</resources>

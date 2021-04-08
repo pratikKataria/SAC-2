@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="3dp">
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textColor="@color/theme_purple"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:id="@+id/view_schd_day"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_schd_timing1"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/source_sans_pro"
+        style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        android:layout_toRightOf="@+id/view_schd_day"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_schd_timing2"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/source_sans_pro"
+        style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        android:layout_below="@+id/view_schd_timing1"
+        android:layout_toRightOf="@+id/view_schd_day"/>
+
+
+</RelativeLayout>

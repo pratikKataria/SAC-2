@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/theme_gradient"
+    tools:context=".fragments.PaymentFragment">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <!--<TextView-->
+        <!--android:id="@+id/fare_details_label"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/TextAppearance.AppCompat.Title"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="@string/fare_details"/>-->
+    <RelativeLayout
+        android:id="@+id/fare_details_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="470dp"
+        android:layout_margin="15dp"
+        android:background="@color/offwhite">
+        <TextView
+            android:id="@+id/fare_details_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/info_service_complete"/>
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_margin"
+            android:padding="5dp"
+            android:stretchColumns="1"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="@string/total_fare"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    style="@style/TextAppearance.AppCompat.Medium"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/colon"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/base_fare_val"
+                    android:text="$00.00"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="@string/tax_label"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    style="@style/TextAppearance.AppCompat.Medium" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/colon"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/tax_val"
+                    android:text="$00.00"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="@string/extra_time_label"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    style="@style/TextAppearance.AppCompat.Medium" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/colon"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/extra_time_val"
+                    android:text="00.00"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="@string/extra_rate_label"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    style="@style/TextAppearance.AppCompat.Medium" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/colon"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/extra_rate_val"
+                    android:text="$00.00"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dp"
+                    android:gravity="left"
+                    android:textSize="20sp" />
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip" />
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/theme_green"/>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="@string/pay_label"
+                    android:padding="3dp"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/theme_green" />
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/total_amount_val"
+                    android:text="$00.00"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/theme_green"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:padding="3dip" />
+            </TableRow>
+
+        </TableLayout>
+
+       <!-- <Button
+            android:layout_below="@+id/fare_denominations"
+            style="@style/TransparentPositiveButton"
+            android:background="@drawable/pay_btn"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/pay_fare"/>-->
+    </RelativeLayout>
+    <Button
+        style="@style/MultiButtonBlue"
+        android:text="@string/proceed_payment"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/pay_fare"/>
+    <LinearLayout
+        android:id="@+id/payment_done_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/fare_details_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/done_label"
+            android:textColor="@color/theme_blue"
+            android:textSize="22sp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/rate_label_text"/>
+        <include
+            layout="@layout/rate_and_details_layout"/>
+        <!-- <RatingBar
+                android:id="@+id/rate_buddy_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:layout_centerHorizontal="true" />
+
+            <ScrollView
+                android:id="@+id/sv_user_choice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/rate_spec_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="8dp"
+                        android:visibility="visible"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/driver_rate_specifier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/rate_subheader_text"
+                            android:layout_gravity="center_horizontal" />
+
+                        <CheckBox
+                            android:id="@+id/chk1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/rate_hosting"/>
+                        <CheckBox
+                            android:id="@+id/chk2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/rate_attitude"/>
+                        <CheckBox
+                            android:id="@+id/chk3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/rate_companionship"/>
+                        <CheckBox
+                            android:id="@+id/chk4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/rate_behaviour"/>
+                    </LinearLayout>
+                    <View
+                        style="@style/GreyDivider"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <LinearLayout
+                        android:id="@+id/under_rate_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="8dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/driver_underrate_specifier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/underrate_subheader_text"
+                            android:layout_gravity="center_horizontal" />
+
+                        <CheckBox
+                            android:id="@+id/uchk1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/rate_hosting"/>
+                        <CheckBox
+                            android:id="@+id/uchk2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/rate_attitude"/>
+                        <CheckBox
+                            android:id="@+id/uchk3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/rate_companionship"/>
+                        <CheckBox
+                            android:id="@+id/uchk4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/rate_behaviour"/>
+                        &lt;!&ndash;<com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/user_short_experience"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:inputType="textMultiLine"
+                            android:hint="@string/rate_buddy_feedback_text"
+                            android:maxLength="1000"/>&ndash;&gt;
+                    </LinearLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/user_ride_experience"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:inputType="textMultiLine"
+                        android:hint="@string/rate_buddy_feedback_text"
+                        android:maxLength="1000"/>
+
+                    <Button
+                        style="@style/GradientSmallButton"
+                        android:id="@+id/rate_buddy_btn"
+                        android:layout_gravity="center"
+                        android:text="@string/rate_btn_label"/>
+                </LinearLayout>
+
+            </ScrollView>-->
+        </LinearLayout>
+    </LinearLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

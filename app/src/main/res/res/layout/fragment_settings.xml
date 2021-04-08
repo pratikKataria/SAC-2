@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/user_desc_layout"
+        android:padding="3dp"
+        android:background="@color/theme_background">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp">
+            <com.caringaide.user.utils.RoundedImageView
+                android:id="@+id/settings_profileimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/user"
+                android:src="@drawable/user_avatar"/>
+            <ImageButton
+                android:id="@+id/settings_change_profileimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_action_camera"
+                android:contentDescription="@string/edit_user_label"
+                android:layout_alignBottom="@+id/settings_profileimg"
+                android:layout_alignEnd="@+id/settings_profileimg"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="0.9">
+
+            <TextView
+                android:id="@+id/settings_fullname"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="@string/full_name_label"
+                android:textColor="@color/theme_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settings_mobile"
+                android:text="@string/mobile_label"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_semibold"
+                android:textColor="@color/theme_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settings_email"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_semibold"
+                android:textColor="@color/theme_blue"
+                android:textStyle="bold"
+                android:text="@string/email_label"/>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/edit_user_profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_icon"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:contentDescription="@string/edit_user_label"
+            style="@style/Widget.AppCompat.ActionButton"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/main_divider"
+        style="@style/GreyDivider"
+        android:layout_below="@+id/user_desc_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_divider">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/user_desc_layout">
+        <LinearLayout
+            android:id="@+id/change_pass_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/view_margin"
+        android:fontFamily="@font/source_sans_pro"
+                android:gravity="center"
+                android:text="@string/change_password"
+                android:textColor="@color/theme_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/view_margin"
+        android:fontFamily="@font/source_sans_pro"
+                android:gravity="center"
+                android:text="@string/change_password_subtitle"
+                android:textColor="@color/text_green" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/input_margin">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etNewPasswordLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:layout_weight="0.9">
+
+                    <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                        android:id="@+id/etNewPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                        android:hint="@string/new_password_hint"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageButton
+                    android:id="@+id/password_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_questionmark"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etConfirmPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_marginHorizontal="@dimen/input_margin">
+
+                <com.google.android.material.textfield.TextInputEditText android:backgroundTint="@color/theme_blue"
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_extralight"
+                    android:hint="@string/confirm_password_hint"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/submit_change_password"
+                style="@style/GradientSmallButton"
+                android:layout_width="wrap_content"
+                android:text="@string/submit"
+                android:layout_margin="@dimen/input_margin"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/change_pass_divider"
+            style="@style/GreyDivider"
+            android:layout_below="@id/change_pass_layout"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

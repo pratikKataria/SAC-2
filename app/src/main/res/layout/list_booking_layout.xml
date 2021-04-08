@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.ListBeneficiaryFragment">
+
+    <Button
+        android:id="@+id/register_client_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="@string/register_ben"
+        android:textColor="@color/theme_purple" />
+    <ListView
+        android:id="@+id/list_beneficiary_lv"
+        android:layout_below="@+id/register_client_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true"
+        android:animationCache="false"
+        android:dividerHeight="1dp"
+        android:visibility="visible"
+        android:layout_marginStart="@dimen/input_margin"
+        android:layout_marginEnd="@dimen/input_margin">
+    </ListView>
+
+    <TextView
+        android:id="@+id/no_data_tv_list_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+            android:fontFamily="@font/source_sans_pro_extralight"
+        android:gravity="center"
+        android:text="@string/no_data_add_ben"
+        android:textColor="@color/common_google_signin_btn_text_dark_disabled"
+        android:textSize="30sp"
+        android:visibility="gone" />
+    <FrameLayout
+        android:id="@+id/fav_buddy_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>
